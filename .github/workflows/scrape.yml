@@ -1,9 +1,9 @@
-# 2026-11-10: schedule re-register touch — no functional change
+# 2026-11-10: off-peak minutes 7,37 to dodge GitHub's top-of-hour load — no other change
 name: Update rates
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "7,37 * * * *" # Runs every 30 minutes
   workflow_dispatch:
 
 permissions:
