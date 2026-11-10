@@ -11,6 +11,20 @@
   --radius: 14px;
 }
 
+/* მუქი თემა — ირთვება html.dark კლასით */
+html.dark {
+  --blue: #8fb0ff;
+  --blue-light: #1d3a86;
+  --bg: #0A0A0A;
+  --card: #141a2e;
+  --text: #f2f4f8;
+  --muted: #9aa3b5;
+  --line: #2a3350;
+  --green: #4ade80;
+  --green-bg: #14301f;
+}
+html.dark .source .stale { color: #f0a832; }
+
 * { box-sizing: border-box; }
 
 body {
@@ -27,7 +41,23 @@ body {
   background: var(--blue);
   color: #fff;
   padding: 28px 0 22px;
+  position: relative;
 }
+.theme-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, .45);
+  background: rgba(255, 255, 255, .12);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.theme-toggle:hover { background: rgba(255, 255, 255, .22); }
 .top h1 { margin: 0; font-size: 30px; }
 .top h1 .latin { font-size: 15px; font-weight: 400; opacity: .75; }
 .top .subtitle { margin: 6px 0 0; opacity: .9; }
@@ -107,7 +137,7 @@ table.rates td.best { color: var(--green); font-weight: 700; background: var(--g
   font-size: 16px;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fff;
+  background: var(--card);
   color: var(--text);
 }
 .calc-row input { flex: 1 1 140px; min-width: 0; }
@@ -118,7 +148,7 @@ table.rates td.best { color: var(--green); font-weight: 700; background: var(--g
   padding: 10px;
   font-size: 14px;
   border: 1px solid var(--blue);
-  background: #fff;
+  background: var(--card);
   color: var(--blue);
   border-radius: 10px;
   cursor: pointer;

@@ -210,3 +210,18 @@ async function init() {
 }
 
 init();
+
+// მუქი თემა: შენახული არჩევანი იმახსოვრება, ღილაკი გადართავს
+(function initTheme() {
+  const btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+  function syncIcon() {
+    btn.textContent = document.documentElement.classList.contains("dark") ? "☀️" : "🌙";
+  }
+  syncIcon();
+  btn.addEventListener("click", () => {
+    const dark = document.documentElement.classList.toggle("dark");
+    try { localStorage.setItem("gacvla-theme", dark ? "dark" : "light"); } catch (e) {}
+    syncIcon();
+  });
+})();

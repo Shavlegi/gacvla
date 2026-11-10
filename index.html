@@ -6,9 +6,19 @@
 <title>Gacvla — ვალუტის კურსები</title>
 <meta name="description" content="საქართველოს ბანკებისა და გაცვლის პუნქტების ვალუტის კურსები ერთ ადგილას — ლაივ განახლებებით, თითოეულ ბანკთან კალკულატორით.">
 <link rel="stylesheet" href="styles.css">
+<script>
+  // მუქი თემა გვერდის გახსნამდე: შენახული არჩევანი, თუ არა — სისტემის პარამეტრი
+  try {
+    var t = localStorage.getItem("gacvla-theme");
+    if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    }
+  } catch (e) {}
+</script>
 </head>
 <body>
 <header class="top">
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="თემის შეცვლა">🌙</button>
   <div class="wrap">
     <h1>გაცვლა <span class="latin">Gacvla</span></h1>
     <p class="subtitle">საქართველოს ბანკებისა და გაცვლის პუნქტების კურსები ერთ ადგილას</p>
