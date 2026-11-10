@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gacvla — ვალუტის კურსები</title>
+<meta name="description" content="საქართველოს ბანკებისა და გაცვლის პუნქტების ვალუტის კურსები ერთ ადგილას — ლაივ განახლებებით, თითოეულ ბანკთან კალკულატორით.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>გაცვლა <span class="latin">Gacvla</span></h1>
+    <p class="subtitle">საქართველოს ბანკებისა და გაცვლის პუნქტების კურსები ერთ ადგილას</p>
+    <p class="updated">ბოლოს განახლდა: <span id="updated-at">—</span></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="card">
+    <h2>საუკეთესო კურსები დღეს</h2>
+    <p class="hint">მწვანე — ყველაზე კარგი კურსი შენთვის: ყიდვისას ყველაზე დაბალი გაყიდვის ფასი, გაყიდვისას ყველაზე მაღალი ყიდვის ფასი.</p>
+    <div id="best-rates" class="best-grid"></div>
+  </section>
+
+  <section class="card">
+    <h2>ეროვნული ბანკის ოფიციალური კურსი</h2>
+    <p class="hint">საცნობარო კურსი — ბანკები და გაცვლის პუნქტები ამაზე მაღალ/დაბალ ფასს სთავაზობენ. <span id="nbg-date"></span></p>
+    <div id="nbg-rates" class="nbg-grid"></div>
+    <p class="hint" id="nbg-status"></p>
+  </section>
+
+  <section>
+    <h2 class="section-title">ბანკები</h2>
+    <div id="banks" class="source-list"></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">გაცვლის პუნქტები</h2>
+    <div id="exchanges" class="source-list"></div>
+  </section>
+
+  <section class="card note">
+    <h2>მნიშვნელოვანი</h2>
+    <ul>
+      <li>კურსები საორიენტაციოა — საბოლოო ფასი ბანკში/პუნქტში გადაამოწმე.</li>
+      <li>ბანკის კურსი იცვლება დღის განმავლობაში; აქ ნაჩვენებია ბოლო ცნობილი კურსი განახლების დროით.</li>
+      <li>თუ რომელიმე წყარო ვერ განახლდა, ნაჩვენებია მისი ბოლო ცნობილი კურსი და განახლების დრო.</li>
+    </ul>
+    <p class="sources">წყაროები: ეროვნული ბანკი, თიბისი, საქართველოს ბანკი, ლიბერთი, ბაზისბანკი, პროკრედიტი, ქართუ, ჰალიკი, რიკო კრედიტი, ვალუტო, kursi.ge. კრედო ბანკი არ არის — მას საჯარო (გასაღების გარეშე) კურსის წყარო არ აქვს.</p>  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p>Gacvla — გაკეთებულია უფასოდ, GitHub Pages-ზე. კოდი ღიაა: github.com/Shavlegi/gacvla</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
