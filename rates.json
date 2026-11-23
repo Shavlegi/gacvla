@@ -15,7 +15,7 @@
       "name": "თიბისი",
       "type": "bank",
       "url": "https://tbcbank.ge/ka/valutis-kursi",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "USD": {
           "buy": 2.547,
@@ -27,7 +27,7 @@
         },
         "RUB": {
           "buy": 0.0256,
-          "sell": 0.037
+          "sell": 0.0371
         }
       }
     },
@@ -36,19 +36,19 @@
       "name": "საქართველოს ბანკი",
       "type": "bank",
       "url": "https://bankofgeorgia.ge/ka/retail",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "USD": {
           "buy": 2.56,
           "sell": 2.624
         },
         "EUR": {
-          "buy": 2.807,
-          "sell": 2.887
+          "buy": 2.805,
+          "sell": 2.885
         },
         "GBP": {
-          "buy": 3.354,
-          "sell": 3.452
+          "buy": 3.352,
+          "sell": 3.45
         },
         "RUB": {
           "buy": 0.0238,
@@ -65,7 +65,7 @@
       "name": "ლიბერთი",
       "type": "bank",
       "url": "https://www.libertybank.ge/ka/",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "USD": {
           "buy": 2.542,
@@ -94,7 +94,7 @@
       "name": "ბაზისბანკი",
       "type": "bank",
       "url": "https://basisbank.ge/",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "USD": {
           "buy": 2.555,
@@ -119,7 +119,7 @@
       "name": "პროკრედიტი",
       "type": "bank",
       "url": "https://www.procreditbank.ge/en/exchange",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "USD": {
           "buy": 2.542,
@@ -144,7 +144,7 @@
       "name": "ქართუ",
       "type": "bank",
       "url": "https://www.cartubank.ge/index.php?m=402&lng=eng",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "USD": {
           "buy": 2.57,
@@ -170,7 +170,7 @@
       "name": "ჰალიკი",
       "type": "bank",
       "url": "https://halykbank.ge/ka/individuals/currency",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "USD": {
           "buy": 2.58,
@@ -195,15 +195,15 @@
       "name": "რიკო კრედიტი",
       "type": "exchange",
       "url": "https://www.rico.ge/ka/",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "USD": {
           "buy": 2.59,
           "sell": 2.594
         },
         "EUR": {
-          "buy": 2.842,
-          "sell": 2.852
+          "buy": 2.84,
+          "sell": 2.85
         },
         "RUB": {
           "buy": 0.0294,
@@ -214,8 +214,8 @@
           "sell": 0.052
         },
         "GBP": {
-          "buy": 3.383,
-          "sell": 3.403
+          "buy": 3.38,
+          "sell": 3.4
         }
       }
     },
@@ -224,7 +224,7 @@
       "name": "ვალუტო",
       "type": "exchange",
       "url": "https://valuto.ge/",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "EUR": {
           "buy": 2.844,
@@ -236,7 +236,7 @@
         },
         "RUB": {
           "buy": 0.026,
-          "sell": 0.0318
+          "sell": 0.0317
         },
         "TRY": {
           "buy": 0.0503,
@@ -253,15 +253,15 @@
       "name": "kursi.ge",
       "type": "exchange",
       "url": "https://kursi.ge/",
-      "updated_at": "2026-11-23T09:30:46+00:00",
+      "updated_at": "2026-11-23T10:00:55+00:00",
       "rates": {
         "USD": {
           "buy": 2.588,
           "sell": 2.595
         },
         "EUR": {
-          "buy": 2.837,
-          "sell": 2.855
+          "buy": 2.84,
+          "sell": 2.858
         },
         "RUB": {
           "buy": 0.031,
@@ -270,5 +270,5 @@
       }
     }
   ],
-  "updated_at": "2026-11-23T09:30:46+00:00"
+  "updated_at": "2026-11-23T10:00:55+00:00"
 }
