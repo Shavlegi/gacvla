@@ -15,19 +15,19 @@
       "name": "თიბისი",
       "type": "bank",
       "url": "https://tbcbank.ge/ka/valutis-kursi",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "USD": {
           "buy": 2.546,
           "sell": 2.636
         },
         "EUR": {
-          "buy": 2.768,
+          "buy": 2.769,
           "sell": 2.912
         },
         "RUB": {
           "buy": 0.0255,
-          "sell": 0.0369
+          "sell": 0.037
         }
       }
     },
@@ -36,7 +36,7 @@
       "name": "საქართველოს ბანკი",
       "type": "bank",
       "url": "https://bankofgeorgia.ge/ka/retail",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "USD": {
           "buy": 2.56,
@@ -65,7 +65,7 @@
       "name": "ლიბერთი",
       "type": "bank",
       "url": "https://www.libertybank.ge/ka/",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "USD": {
           "buy": 2.542,
@@ -94,7 +94,7 @@
       "name": "ბაზისბანკი",
       "type": "bank",
       "url": "https://basisbank.ge/",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "USD": {
           "buy": 2.555,
@@ -119,19 +119,19 @@
       "name": "პროკრედიტი",
       "type": "bank",
       "url": "https://www.procreditbank.ge/en/exchange",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "USD": {
           "buy": 2.542,
           "sell": 2.643
         },
         "EUR": {
-          "buy": 2.771,
-          "sell": 2.92
+          "buy": 2.77,
+          "sell": 2.919
         },
         "GBP": {
-          "buy": 3.322,
-          "sell": 3.473
+          "buy": 3.324,
+          "sell": 3.475
         },
         "TRY": {
           "buy": 0.046,
@@ -144,7 +144,7 @@
       "name": "ქართუ",
       "type": "bank",
       "url": "https://www.cartubank.ge/index.php?m=402&lng=eng",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "USD": {
           "buy": 2.57,
@@ -170,7 +170,7 @@
       "name": "ჰალიკი",
       "type": "bank",
       "url": "https://halykbank.ge/ka/individuals/currency",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "USD": {
           "buy": 2.58,
@@ -195,7 +195,7 @@
       "name": "რიკო კრედიტი",
       "type": "exchange",
       "url": "https://www.rico.ge/ka/",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "USD": {
           "buy": 2.59,
@@ -214,8 +214,8 @@
           "sell": 0.052
         },
         "GBP": {
-          "buy": 3.379,
-          "sell": 3.399
+          "buy": 3.38,
+          "sell": 3.4
         }
       }
     },
@@ -224,11 +224,11 @@
       "name": "ვალუტო",
       "type": "exchange",
       "url": "https://valuto.ge/",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "EUR": {
-          "buy": 2.839,
-          "sell": 2.847
+          "buy": 2.84,
+          "sell": 2.849
         },
         "USD": {
           "buy": 2.59,
@@ -253,15 +253,15 @@
       "name": "kursi.ge",
       "type": "exchange",
       "url": "https://kursi.ge/",
-      "updated_at": "2026-11-24T15:30:45+00:00",
+      "updated_at": "2026-11-24T16:00:52+00:00",
       "rates": {
         "USD": {
           "buy": 2.5905,
           "sell": 2.5965
         },
         "EUR": {
-          "buy": 2.835,
-          "sell": 2.855
+          "buy": 2.83,
+          "sell": 2.85
         },
         "RUB": {
           "buy": 0.031,
@@ -270,5 +270,5 @@
       }
     }
   ],
-  "updated_at": "2026-11-24T15:30:45+00:00"
+  "updated_at": "2026-11-24T16:00:52+00:00"
 }
