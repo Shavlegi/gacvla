@@ -262,6 +262,27 @@ def fetch_rico():
     return clean_rates(out)
 
 
+def fetch_terabank():
+    """Terabank public JSON API (POST, no key): GetAllTeraCrossRates.
+    Returns two rows per currency: standard rate and special rate
+    (isSpecialRate=true — the better online/app rate, shown on the site
+    as 'სპეც კურსი'). Prefer the special rate, fall back to standard."""
+    url = "https://terabank.ge/_mvcapi/CurrencyRatesApi/GetAllTeraCrossRates"
+    r = requests.post(url, json={}, headers=UA, timeout=30)
+    r.raise_for_status()
+    out = {}
+    for it in r.json().get("data", []):
+        code = it.get("iso")
+        if code == "RUR":
+            code = "RUB"
+        if code not in WANTED:
+            continue
+        pair = {"buy": it.get("teraCrossRateBuy"), "sell": it.get("teraCrossRateSell")}
+        if code not in out or it.get("isSpecialRate"):
+            out[code] = pair
+    return clean_rates(out)
+
+
 SOURCES = [
     # (id, name, type, url, fetcher, note)
     ("tbc", "თიბისი", "bank", "https://tbcbank.ge/ka/valutis-kursi",
@@ -278,6 +299,8 @@ SOURCES = [
      lambda ctx: fetch_cartu(), "საბარათე კურსი — ფილიალის ნაღდი კურსისგან შეიძლება განსხვავდებოდეს."),
     ("halyk", "ჰალიკი", "bank", "https://halykbank.ge/ka/individuals/currency",
      lambda ctx: fetch_halyk(), None),
+    ("terabank", "თერაბანკი", "bank", "https://terabank.ge/en/retail/exchangerates",
+     lambda ctx: fetch_terabank(), "სპეც კურსი — ონლაინ კონვერტაციის კურსი; ფილიალში ნაღდი კურსი განსხვავდება."),
     ("rico", "რიკო კრედიტი", "exchange", "https://www.rico.ge/ka/",
      lambda ctx: fetch_rico(), None),
     ("valuto", "ვალუტო", "exchange", "https://valuto.ge/",
