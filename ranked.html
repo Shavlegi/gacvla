@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gacvla — რეიტინგი: საუკეთესო კურსიდან ცუდისკენ</title>
+<meta name="description" content="ბანკებისა და გაცვლის პუნქტების რეიტინგი არჩეული ვალუტისთვის — საუკეთესო კურსიდან ცუდისკენ.">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // მუქი თემა გვერდის გახსნამდე: შენახული არჩევანი, თუ არა — სისტემის პარამეტრი
+  try {
+    var t = localStorage.getItem("gacvla-theme");
+    if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    }
+  } catch (e) {}
+</script>
+</head>
+<body>
+<header class="top">
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="თემის შეცვლა">🌙</button>
+  <div class="wrap">
+    <h1>რეიტინგი <span class="latin">Gacvla</span></h1>
+    <p class="subtitle">საუკეთესო კურსიდან ცუდისკენ — აირჩიე ვალუტა და ნახე, სად ჯობია გაცვლა</p>
+    <p class="updated">ბოლოს განახლდა: <span id="updated-at">—</span></p>
+    <p class="top-link"><a href="index.html">← ყველა კურსი</a></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="card">
+    <div class="cur-picker" id="cur-picker"></div>
+    <div class="mode-toggle" id="mode-toggle">
+      <button type="button" class="mode-btn active" data-mode="buy">ვალუტას ვყიდი</button>
+      <button type="button" class="mode-btn" data-mode="sell">ვალუტას ვყიდულობ</button>
+    </div>
+    <p class="hint" id="rank-hint"></p>
+    <ol class="rank-list" id="rank-list"></ol>
+    <p class="hint" id="rank-empty"></p>
+  </section>
+
+  <section class="card note">
+    <h2>მნიშვნელოვანი</h2>
+    <ul>
+      <li>რეიტინგი დგება ბოლო ცნობილი კურსებით; წყარო, რომელსაც შენი ვალუტა არ აქვს, სიაში არ ჩნდება.</li>
+      <li>„საუკეთესო" ნიშნავს: გაყიდვისას — ყველაზე მაღალ ყიდვის ფასს, ყიდვისას — ყველაზე დაბალ გაყიდვის ფასს.</li>
+      <li>კურსები საორიენტაციოა — საბოლოო ფასი ბანკში/პუნქტში გადაამოწმე.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p>Gacvla — გაკეთებულია უფასოდ, GitHub Pages-ზე. კოდი ღიაა: github.com/Shavlegi/gacvla</p>
+</footer>
+
+<script src="ranked.js"></script>
+</body>
+</html>
